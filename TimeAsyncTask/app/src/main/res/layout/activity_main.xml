@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.robertmccormick.mccormickrob_ce06.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:padding="32dp"
+            android:inputType="number"
+            android:id="@+id/mineidttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="minute(s)"
+            />
+
+        <TextView
+            android:padding="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="32dp" />
+        <EditText
+            android:padding="32dp"
+            android:inputType="number"
+            android:id="@+id/seceidttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="second(s)"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+        <Button
+            android:id="@+id/startb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:onClick="check"
+
+            />
+
+        <Button
+            android:id="@+id/stopb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="Stop"
+            android:onClick="stopCount"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
